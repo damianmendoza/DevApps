@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="509.0" prefWidth="709.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.tareaapps.HelloController">
+    <VBox alignment="CENTER" layoutX="1.0" layoutY="-1.0" prefHeight="509.0" prefWidth="709.0">
+        <TableView fx:id="tb_Estudiantes" onMouseClicked="#clicEstudiante" prefHeight="408.0" prefWidth="709.0">
+            <columns>
+                <TableColumn fx:id="clmn_primerNom" prefWidth="176.0" text="Primer nombre" />
+                <TableColumn fx:id="clmn_segundoNom" minWidth="0.0" prefWidth="179.0" text="Segundo nombre" />
+                <TableColumn fx:id="clmn_apellidoPat" minWidth="0.0" prefWidth="174.0" text="Apellido paterno" />
+                <TableColumn fx:id="clmn_apellidoMat" minWidth="0.0" prefWidth="179.0" text="Apellido materno" />
+            </columns>
+        </TableView>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+            <padding>
+                <Insets top="20.0" />
+            </padding>
+            <children>
+                <Button fx:id="btn_Agregar" mnemonicParsing="false" onAction="#clicAgregar" text="Agregar" />
+                <Button fx:id="btn_Visualizar" mnemonicParsing="false" onAction="#clicVisualizar" text="Visualizar" />
+                <Button fx:id="btn_Borrar" mnemonicParsing="false" onAction="#clicBorrar" text="Borrar" />
+            </children>
+        </HBox>
+    </VBox>
+</AnchorPane>
